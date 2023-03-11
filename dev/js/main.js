@@ -15,7 +15,7 @@ function affichageRecherche(){
 
 function recherche(){
    let inputValueWEspace = inputSearch.value
-   let inputValueRempl = inputValueWEspace.replace(' ', "+")
+   let inputValueRempl = inputValueWEspace.split(' ').join('+');
    let inputValue = inputValueRempl
    
    if(radioImg.checked){
